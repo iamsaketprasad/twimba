@@ -18,7 +18,7 @@ document.addEventListener('dblclick', function(e){
 
 function deleteNewTweet(){
     tweetsData.shift()
-    localStorage.clear()
+    // localStorage.clear()
     render()
     localStorage.setItem('tweetsData', JSON.stringify(tweetsData))
 }
